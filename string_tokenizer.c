@@ -44,16 +44,14 @@ char **string_tok(char *str, char *del, int *size)
 	int count = 0;
 
 	char *token = strtok(str, del);
-	printf("btestsie%lu\n", sizeof(parts));
 
 	while (token != NULL)
 	{
-	  parts = _realloc(parts, sizeof(parts) * count,  (count + 1) * sizeof(char *));
+	parts = _realloc(parts, sizeof(parts) * count, (count + 1) * sizeof(char *));
 		parts[count] = token;
 		count++;
 		token = strtok(NULL, del);
 	}
 	*size = count;
-	printf("atestsie%lu\n", sizeof(parts));
 	return (parts);
 }

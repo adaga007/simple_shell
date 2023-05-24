@@ -16,5 +16,5 @@ char *_stringdup(char *str);
 char *_stringcpy(char *dest, char *src, int n);
 size_t _stringlen(char *s);
 void _stringcat(char *dest, char *src);
-char *_getAbsPath (char *pname, char **envp);
+char *_getAbsPath(char *pname, char **envp);
 #endif
